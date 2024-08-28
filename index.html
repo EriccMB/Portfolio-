@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="src/icons/icon-pc.png" type="image/x-icon">
+    <script src="src/js/script.js" defer></script>
+    <title>Eric Morais</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about-me">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+        <button onclick="openMenu()" id="open-menu"><img src="src/icons/icon-list.png" width="40px" alt=""></button>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <div class="home-content-box">
+                <div class="home-text-box">
+                    <h1>Olá,</h1>
+                    <h1>Eu sou Eric </h1>
+                    <h2>Desenvolvedor Front-end</h2>
+                </div>
+                <div class="home-img-box">
+                    <img src="src/images/home-img.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="about-me" class="about-me">
+            <div class="about-me-content-box">
+                <h1>Sobre Mim</h1>
+                <p>
+                    Sou Eric Morais, desenvolvedor web com habilidades em HTML, CSS, JavaScript e React.js. Focado em
+                    criar soluções web
+                    eficientes e esteticamente agradáveis, busco sempre aprimorar minhas habilidades técnicas. Estou
+                    aberto a novas oportunidades para crescer na área de tecnologia.
+                </p>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="skills-content-box">
+                <h1>Habilidades</h1>
+                <div class="all-icons-box">
+                    <div class="icon-box">
+                        <img src="src/icons/icon-html.svg" alt="">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="icon-box">
+                        <img src="src/icons/icon-css.svg" alt="">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="icon-box">
+                        <img src="src/icons/icon-js.svg" alt="">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="icon-box">
+                        <img src="src/icons/icon-react.svg" alt="">
+                        <span>ReactJS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div class="projects-content-box">
+                <h1>Projetos</h1>
+                <div class="all-projects-box">
+                    <div class="project-box">
+                        <img src="src/images/Projects/weather-forecast.PNG" alt="Weather-forecast">
+                        <div class="projects-text-box">
+                            <h3>Previsão do Tempo</h3>
+                            <span>Um projeto feito em ReactJS que consome uma api de previsão do tempo</span>
+                            <div class="project-button-box">
+                                <a href="https://previsaodotempoproject.netlify.app/" target="_blank">Abrir</a>
+                                <a href="https://github.com/EriccMB/Previsao-do-Tempo-React" target="_blank">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="src/images/Projects/todo-list.jpg" alt="Todo-list">
+                        <div class="projects-text-box">
+                            <h3>Lista de Tarefas</h3>
+                            <span>Um lista de tarefas feito em ReactJS</span>
+                            <div class="project-button-box">
+                                <a href="https://listadetarefasreactprojeto.netlify.app/" target="_blank">Abrir</a>
+                                <a href="https://github.com/EriccMB/Lista-de-Tarefas" target="_blank">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="project-box">
+                        <img src="src/images/Projects/todo-list.jpg" alt="Todo-list">
+                        <div class="projects-text-box">
+                            <h3>Lista de Tarefas</h3>
+                            <span>Um lista de tarefas feito em ReactJS</span>
+                            <div class="project-button-box">
+                                <a href="https://previsaodotempoproject.netlify.app/" target="_blank">Abrir</a>
+                                <a href="https://github.com/EriccMB/Previsao-do-Tempo-React" target="_blank">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="src/images/Projects/todo-list.jpg" alt="Todo-list">
+                        <div class="projects-text-box">
+                            <h3>Lista de Tarefas</h3>
+                            <span>Um lista de tarefas feito em ReactJS</span>
+                            <div class="project-button-box">
+                                <a href="https://previsaodotempoproject.netlify.app/" target="_blank">Abrir</a>
+                                <a href="https://github.com/EriccMB/Previsao-do-Tempo-React" target="_blank">Código</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact" class="contact">
+            <div class="contact-content-box">
+                <h1>Contato</h1>
+                <div class="all-contact-icons-box">
+                    <div class="contact-icon-box">
+                        <a href="https://www.linkedin.com/in/ericmorais576/" target="_blank"><img src="/src/icons/icon-linkedin.svg" alt=""></a>
+                        <span>Linkedin</span>
+                        <span>@ericmorais576</span>
+                    </div>
+                    <div class="contact-icon-box">
+                        <a href="https://github.com/EriccMB" target="_blank"><img src="/src/icons/icon-github.svg" alt=""></a>
+                        <span>Github</span>
+                        <span>@EriccMB</span>
+                    </div>
+                    <div class="contact-icon-box">
+                        <a href="mailto:ericmorais198@gmail.com" target="_blank"><img src="/src/icons/icon-email.png" alt=""></a>
+                        <span>Email</span>
+                        <span>ericmorais198@gmail.com
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <div class="menu-mobile">
+        <nav>
+            <button onclick="closeMenu()" id="close-menu"><img src="src/icons/icon-x.png" width="30px" alt=""></button>
+            <ul>
+                <li><a class="itemList" href="#home">Início</a></li>
+                <li><a class="itemList" href="#about-me">Sobre mim</a></li>
+                <li><a class="itemList" href="#skills">Habilidades</a></li>
+                <li><a class="itemList" href="#contact">Contato</a></li>
+                <li><a class="itemList" href="#projects">Projetos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay-menu-mobile">
+        
+    </div>
+
+</body>
+
+</html>

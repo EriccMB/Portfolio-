@@ -1,0 +1,442 @@
+:root {
+    --dark-purple: #050107;
+    --light-purple: #A41BFF;
+    --light-gray: #a39f9f;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-purple);
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* mobile */
+
+.overlay-menu-mobile {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    background-color: #050107;
+    opacity: 0.5;
+}
+
+.menu-mobile {
+    right: -100%;
+    z-index: 9999;
+    height: 100vh;
+    width: 60%;
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    background-color: var(--dark-purple);
+    transition: right 0.2s ease-in-out;
+}
+
+header button {
+    padding: 10px;
+    display: none;
+    background-color: transparent;
+}
+
+.menu-mobile nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    text-align: right;
+
+}
+
+.menu-mobile nav ul li {
+    padding: 30px;
+}
+
+.menu-mobile nav ul a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+}
+
+.menu-mobile nav button {
+    padding: 10px;
+    background-color: transparent;
+}
+
+.menu-mobile nav ul a:hover {
+    color: var(--light-gray);
+}
+
+/* mobile */
+header {
+    width: 100%;
+    display: flex;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header nav {
+    display: block;
+    width: 70%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul a:hover {
+    color: var(--light-purple);
+}
+
+.home {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .home-content-box {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .home-text-box h1 {
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+}
+
+.home .home-text-box h2 {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--light-purple);
+}
+
+.home .home-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .home-img-box img {
+    width: 30rem;
+}
+
+.about-me {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .about-me-content-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-me .about-me-content-box h1 {
+    font-size: 2.6rem;
+    color: var(--light-purple);
+}
+
+.about-me .about-me-content-box p {
+    width: 50%;
+    text-align: justify;
+    font-size: 1.4rem;
+    color: var(--light-gray);
+}
+
+.skills {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .skills-content-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+}
+
+.skills .skills-content-box h1 {
+    font-size: 2.6rem;
+    color: var(--light-purple);
+}
+
+.skills .skills-content-box .all-icons-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills .skills-content-box .all-icons-box .icon-box {
+    color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skills .skills-content-box .all-icons-box .icon-box:hover {
+    transform: scale(1.2);
+}
+
+.projects {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .projects-content-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+}
+
+.projects .projects-content-box h1 {
+    font-size: 2.6rem;
+    color: var(--light-purple);
+}
+
+.projects .projects-content-box .all-projects-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.projects .projects-content-box .all-projects-box .project-box {
+    width: 450px;
+    height: 240px;
+    background-color: #A41BFF;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.projects .projects-content-box .all-projects-box .project-box:hover {
+    transform: scale(1.05);
+
+    .projects-text-box {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.382);
+        width: 100%;
+        padding: 400px 10px 10px 10px;
+        gap: 10px;
+    }
+}
+
+.project-button-box {
+    display: flex;
+    gap: 5px;
+}
+
+.project-button-box a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--dark-purple);
+    padding: 5px;
+    width: 5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.project-button-box a:hover {
+    outline: 1px solid var(--light-purple);
+}
+
+.projects .projects-content-box .all-projects-box .project-box .projects-text-box {
+    display: none;
+}
+
+.projects .projects-content-box .all-projects-box .project-box img {
+    height: 100%;
+    width: 100%;
+}
+
+.contact {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .contact-content-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10rem;
+}
+
+.contact .contact-content-box h1 {
+    font-size: 2.6rem;
+    color: var(--light-purple);
+}
+
+.contact .contact-content-box .all-contact-icons-box {
+    display: flex;
+    gap: 5rem;
+}
+
+.contact .contact-content-box .all-contact-icons-box .contact-icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 13rem;
+    transition: all 0.4s ease;
+}
+
+.contact .contact-content-box .all-contact-icons-box .contact-icon-box:hover {
+    transform: scale(1.1);
+}
+
+.contact .contact-content-box .all-contact-icons-box .contact-icon-box span {
+    color: var(--light-gray);
+}
+
+.contact .contact-content-box .all-contact-icons-box .contact-icon-box span:first-of-type {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.open {
+    display: block;
+    right: 0;
+}
+@media only screen and (max-width: 1000px) {
+
+    .home,
+    .about-me,
+    .skills,
+    .projects,
+    .contact {
+        padding: 50px 10px 50px 10px;
+    }
+
+    .home .home-content-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home .home-img-box {
+        display: none;
+    }
+
+    .skills .skills-content-box {
+        width: 90%;
+    }
+
+    .projects .projects-content-box {
+        width: 100%;
+    }
+
+    .about-me .about-me-content-box p {
+        width: 100%;
+    }
+
+    .contact .contact-content-box .all-contact-icons-box {
+        gap: 1rem;
+    }
+
+    .contact .contact-content-box .all-contact-icons-box .contact-icon-box {
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .home {
+        min-height: 80vh;
+    }
+
+    .about-me,
+    .skills,
+    .projects,
+    .contact {
+        text-align: center;
+    }
+
+    header {
+        justify-content: right;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header button {
+        display: block;
+    }
+
+    .home .home-text-box h1 {
+        font-size: 4rem;
+    }
+
+    .home .home-text-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .projects .projects-content-box .all-projects-box .project-box {
+        height: 200px;
+        width: 400px;
+    }
+
+    .contact .contact-content-box .all-contact-icons-box {
+        flex-direction: column;
+    }
+}
